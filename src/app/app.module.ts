@@ -12,9 +12,10 @@ import { HomeComponent } from './sections/home/home.component';
 import { AboutComponent } from './sections/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { SkillPillComponent } from './sections/skills/skill-pill/skill-pill.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, AboutComponent, SkillsComponent, WorkComponent, ContactComponent, HomeComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, AboutComponent, SkillsComponent, WorkComponent, ContactComponent, HomeComponent, SkillPillComponent],
   
   imports: [BrowserModule, BrowserAnimationsModule, MatIconModule],
   providers: [DecimalPipe],

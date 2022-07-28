@@ -1,5 +1,8 @@
 <section>
     <div class="container">
         <h1>Skills</h1> 
+        <div id="skills-container">
+            <app-skill-pill *ngFor="let skill of skills" [skill]="skill"></app-skill-pill>
+        </div>
     </div>
 </section>
