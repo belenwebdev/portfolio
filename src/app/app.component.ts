@@ -13,21 +13,21 @@ export class AppComponent {
     if ( el!=null ) el.scrollIntoView();
   }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    console.log(window.scrollY);
-    const maxHeight = document.getElementById('home')?.offsetHeight;
-    console.log('max height',maxHeight);
-    if(!maxHeight) return;
-    if(window.scrollY>maxHeight){
-      console.log('unfix navbar')
-      document.getElementsByClassName('navbar')[0].classList.add('fixed-top');
-    }
-    else {
-      console.log('FIX navbar')
-      document.getElementsByClassName('navbar')[0].classList.remove('fixed-top');
-    }
+  // @HostListener("window:scroll", [])
+  // onWindowScroll() {
+  //   console.log(window.scrollY);
+  //   const maxHeight = document.getElementById('home')?.offsetHeight;
+  //   console.log('max height',maxHeight);
+  //   if(!maxHeight) return;
+  //   if(window.scrollY>maxHeight){
+  //     console.log('unfix navbar')
+  //     document.getElementsByClassName('navbar')[0].classList.add('fixed-top');
+  //   }
+  //   else {
+  //     console.log('FIX navbar')
+  //     document.getElementsByClassName('navbar')[0].classList.remove('fixed-top');
+  //   }
 
-  }
+  // }
 
 }

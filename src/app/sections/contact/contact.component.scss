@@ -1,3 +1,14 @@
 section {
-    background-color:var(--color-yellow);
+    background-color:#484848;
+    padding-top:10vh;
+    padding-bottom: 5vh;
+    clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+
+    h1 {
+        color:white
+    }
+
+    h1::after { 
+        background: var(--color-yellow);
+    }
 }
