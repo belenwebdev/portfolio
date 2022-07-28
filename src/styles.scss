@@ -1,0 +1,40 @@
+@import './app/shared/variables';
+
+section {
+    margin:0;
+}
+html, body { 
+    height: 100%; 
+}
+body {
+    margin: 0; 
+    font-family: 'Lato', Roboto, "Helvetica Neue", sans-serif; 
+}
+
+p{
+    font-family: 'Lato';
+    font-weight: 300;
+    text-align: justify;
+}
+
+.half-width {
+    width:50%;
+}
+
+h1{
+    font-family: 'Yeseva One' !important;
+    font-size: 3em !important;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+h1::after { 
+    content: "";
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 1px;
+    background: var(--color-pink);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 15vw;
+    margin: 10px auto 0 auto;
+  }

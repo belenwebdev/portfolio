@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Belen Carrion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class = "navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li class="nav-item" [class.active] = "activePage === 'home'">
+                    <span class="nav-link" (click)="navigateTo('home')">Home</span>
+                </li>
+                <li class="nav-item" [class.active] = "activePage === 'about'">
+                    <span class="nav-link" (click)="navigateTo('about')">About</span>
+                </li>
+                <li class="nav-item" [class.active] = "activePage === 'skills'">
+                    <span class="nav-link" (click)="navigateTo('skills')">Skills</span>
+                </li>
+                <li class="nav-item" [class.active] = "activePage === 'work'">
+                    <span class="nav-link" (click)="navigateTo('work')">Work</span>
+                </li>
+                <li class="nav-item" [class.active] = "activePage === 'contact'">
+                    <span class="nav-link" (click)="navigateTo('contact')">Contact</span>
+                </li>
+            </ul>   
+        </div>
+    </div>
+</nav>

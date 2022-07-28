@@ -1,0 +1,33 @@
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar:not(.fixed-top){
+  background-color: transparent !important;
+
+  .navbar-brand,.nav-link{
+    color:white;
+  }
+}
+
+.navbar{
+  z-index: 999;
+
+  .nav-item {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+
+  .navbar-brand{
+    font-family: 'Yeseva One';
+  }
+
+  
+
+  .active .nav-link{
+    background: linear-gradient(120deg, var(--color-yellow) 0%, var(--color-yellow) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 20%;
+    background-position: 0 90%;
+  }
+}
