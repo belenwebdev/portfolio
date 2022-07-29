@@ -14,11 +14,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { SkillPillComponent } from './sections/skills/skill-pill/skill-pill.component';
 import { WorkCardComponent } from './sections/work/work-card/work-card.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent, AboutComponent, SkillsComponent, WorkComponent, ContactComponent, HomeComponent, SkillPillComponent, WorkCardComponent],
   
-  imports: [BrowserModule, BrowserAnimationsModule, MatIconModule],
+  imports: [BrowserModule, BrowserAnimationsModule, MatIconModule, FontAwesomeModule],
   providers: [DecimalPipe],
   bootstrap: [AppComponent],
 })

@@ -3,12 +3,54 @@ section {
     padding-top:10vh;
     padding-bottom: 5vh;
     clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
-
-    h1 {
-        color:white
+    color: white;
+   
+    .container{
+        width: 50vw;
     }
 
     h1::after { 
         background: var(--color-yellow);
     }
+
+    p {
+        text-align: center;
+    }
+
+    button {
+        width: 15vw;
+        border-radius: 0;
+        background-color: var(--color-yellow);
+        margin: 10px;
+        border:0;
+        color: black;
+    }
+
+    input,textarea{
+        background: transparent;
+        color: white;
+        border: 1px solid rgba(256,256,256,0.5);
+        border-radius: 0;
+        padding:10px;
+        font-family: 'Lato';
+    }
+
+    input{
+        margin-bottom: 20px;
+    }
+
+    textarea{
+        margin-bottom: 10px;
+    }
+
+    input:focus, textarea:focus {
+        border-color:white;
+    }
+
+    ::placeholder, :-ms-input-placeholder,  ::-ms-input-placeholder {
+        color: white;
+        opacity: .7;
+    }
+
+    
 }
