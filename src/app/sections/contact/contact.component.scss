@@ -17,7 +17,7 @@ section {
         text-align: center;
     }
 
-    button {
+    .btn {
         width: 10vw;
         border-radius: 0;
         background-color: transparent;
@@ -29,7 +29,7 @@ section {
         margin-bottom: 0;
     }
 
-    button:hover{
+    .btn:hover{
         background-color: var(--color-yellow);
         color: #484848;
     }
