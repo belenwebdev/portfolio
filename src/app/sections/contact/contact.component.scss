@@ -18,12 +18,20 @@ section {
     }
 
     button {
-        width: 15vw;
+        width: 10vw;
         border-radius: 0;
-        background-color: var(--color-yellow);
+        background-color: transparent;
+        border: 1px solid var(--color-yellow) !important;
+        color: var(--color-yellow);
         margin: 10px;
         border:0;
-        color: black;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    button:hover{
+        background-color: var(--color-yellow);
+        color: #484848;
     }
 
     input,textarea{

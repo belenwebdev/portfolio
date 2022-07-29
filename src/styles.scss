@@ -39,22 +39,31 @@ h1::after {
     margin: 10px auto 0 auto;
 }
 
-.btn {
-    --bg: black;
-    --hover-bg: var(--color-pink);
-    --hover-text: black;
-    color: white;
+button {
     transition: 0.2s;
     padding: 10px;
+
+    i {
+        margin-right:10px;
+    }
 }
+
+// .btn {
+//     --bg: black;
+//     --hover-bg: var(--color-pink);
+//     --hover-text: black;
+//     color: white;
+//     transition: 0.2s;
+//     padding: 10px;
+// }
   
-.btn:hover {
-    color: black;
-    transform: translate(-0.25rem,-0.25rem);
-    box-shadow: 0.25rem 0.25rem black;
-}
+// .btn:hover {
+//     color: black;
+//     transform: translate(-0.25rem,-0.25rem);
+//     box-shadow: 0.25rem 0.25rem black;
+// }
   
-.btn:active {
-    transform: translate(0);
-    box-shadow: none;
-}
+// .btn:active {
+//     transform: translate(0);
+//     box-shadow: none;
+// }
