@@ -5,10 +5,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50vw;
+    width: 60vw;
     padding:50px;
-    border-radius: 5px;
-    margin:10px auto;
+    margin:20px auto;
+    clip-path: polygon(3vw 0, 100% 0%, calc(100% - 3vw) 100%, 0% 100%);
 
     h1::after{
       width: 0;
