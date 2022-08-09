@@ -1,15 +1,22 @@
 section {
     background-color: #F7F8F9;
-    padding:80px;
     clip-path: polygon(0 0, 100% 10vh, 100% calc(100% - 10vh), 0 100%);
 
-    .container{
-        width: 50vw;
+    padding-top:80px;
+    padding-bottom:80px;
+
+    @media only screen and (min-width: 768px) {
+        padding:80px;
+
+        .container{
+            width: 50vw;
+        }
     }
 
     #skills-container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
