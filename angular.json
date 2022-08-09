@@ -76,6 +76,9 @@
               "browserTarget": "portfolio:build:development"
             }
           },
+          "options": {
+            "disableHostCheck": true
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

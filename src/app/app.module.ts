@@ -18,9 +18,25 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ComingSoonComponent } from './shared/coming-soon/coming-soon.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, AboutComponent, SkillsComponent, WorkComponent, ContactComponent, HomeComponent, SkillPillComponent, WorkCardComponent, ComingSoonComponent],
-  
-  imports: [BrowserModule, BrowserAnimationsModule, MatIconModule, FontAwesomeModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent, 
+    FooterComponent, 
+    AboutComponent, 
+    SkillsComponent, 
+    WorkComponent, 
+    ContactComponent, 
+    HomeComponent, 
+    SkillPillComponent, 
+    WorkCardComponent, 
+    ComingSoonComponent
+  ],
+  imports: [
+    BrowserModule, 
+    BrowserAnimationsModule, 
+    MatIconModule,
+    FontAwesomeModule
+  ],
   providers: [DecimalPipe],
   bootstrap: [AppComponent],
 })

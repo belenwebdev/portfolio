@@ -2,10 +2,14 @@
     flex-grow: 0;
 }
 
+.navbar.fixed-top {
+  border-bottom: 1px solid #eaeaea;
+}
+
 .navbar:not(.fixed-top){
   background-color: transparent !important;
 
-  .navbar-brand,.nav-link{
+  .navbar-brand, .nav-link, .nav-item{
     color:white;
   }
 }
@@ -14,20 +18,20 @@
   z-index: 999;
 
   .nav-item {
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    padding-left: 0.75vw;
+    padding-right: 0.75vw;
+    cursor: pointer;
   }
 
   .navbar-brand{
     font-family: 'Yeseva One';
   }
 
-  
-
-  .active .nav-link{
+  .active {
     background: linear-gradient(120deg, var(--color-yellow) 0%, var(--color-yellow) 100%);
     background-repeat: no-repeat;
-    background-size: 100% 20%;
-    background-position: 0 90%;
+    background-size: 100% 2px;
+    background-position: 0 100%;
   }
+
 }
