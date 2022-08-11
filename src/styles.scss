@@ -6,9 +6,17 @@ section {
 html, body { 
     height: 100%; 
 }
+
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     margin: 0; 
     font-family: 'Lato', Roboto, "Helvetica Neue", sans-serif; 
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 p{
