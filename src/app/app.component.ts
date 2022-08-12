@@ -61,6 +61,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
         const sectionTop = current.offsetTop - offset;
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          console.log(`the section id is ${sectionId}`)
           this._navigationPages.selectItem(sectionId);
         }
       }

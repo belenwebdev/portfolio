@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   private stop$ = new Subject<void>();
   public showMenu: boolean = false;
   public currentSection: string = 'home';
+  public isMenuOpen = false;
 
   public sections = ['home', 'about','skills', 'work', 'contact'];
 
@@ -29,6 +30,7 @@ export class HeaderComponent implements OnInit {
   navigateTo(target: string): void {
     this.showMenu = false;
     this.currentSection = target;
+    this.isMenuOpen = false;
     this._navigationService.navegationPages(target);
   }
 
@@ -47,6 +49,10 @@ export class HeaderComponent implements OnInit {
   stop(): void {
     this.stop$.next();
     this.stop$.complete();
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
 }
