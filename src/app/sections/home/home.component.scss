@@ -4,9 +4,7 @@ section{
 }
 
 #welcome{
-	background: linear-gradient(-45deg, var(--color-yellow2), var(--color-yellow), var(--color-orange), var(--color-pink), var(--color-purple2), var(--color-purple), var(--color-purple));
-  background-size: 120% 120%;
-  animation: gradient 15s ease infinite;
+  background-size: 130% 130%;
   display: flex;
   color: white;
   display: flex;
@@ -20,6 +18,12 @@ section{
   padding-top:var(--navbar-height);
   margin-top:var(--navbar-height-negative);
   padding: 5vw;
+  animation: AnimateBG 230s ease infinite;
+  text-shadow: 0 0 100px var(--color-purple);
+  background: var(--color-purple);
+	background: linear-gradient(-45deg, var(--color-yellow2), var(--color-yellow), var(--color-orange), var(--color-pink), var(--color-purple2), var(--color-purple));
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png"), linear-gradient(-45deg, var(--color-yellow2), var(--color-pink),var(--color-purple-darker2));
+  // background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
 
   @media only screen and (min-width: 768px) {
       padding: 10vw;
@@ -43,16 +47,11 @@ section{
   }
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+
+@keyframes AnimateBG {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 #arrow {
@@ -69,4 +68,78 @@ section{
         line-height: 20px;
         margin-top:-11px;
     }
+}
+
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+.background-container{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+
+.stars {
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  z-index: 0;
+}
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+
 }

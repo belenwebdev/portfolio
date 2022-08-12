@@ -2,41 +2,49 @@
     <div class="container">
         <h1>Contact me</h1>
         <p>Hello! Feel free to connect with me in any of the following ways:</p>
-        <div id="contact-links">
-            <button class="btn btn-primary" href="mailto:belencarriondev@gmail.com">
+        <div id="contact-links" class="row">
+          <div class="col-md-4">
+            <a class="btn btn-primary" href="mailto:belencarriondev@gmail.com">
                 <i class="fa-solid fa-paper-plane"></i>
                 E-mail
-            </button>
-            <button class="btn btn-primary" href="https://www.linkedin.com/in/belen-carrion/" target="_blank">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/belen-carrion/" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
                 Linkedin
-            </button>
-            <button class="btn btn-primary" href="https://github.com/belenwebdev" target="_blank">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="btn btn-primary" href="https://github.com/belenwebdev" target="_blank">
                 <i class="fa-brands fa-github"></i>
                 Github
-            </button>
+            </a>
+          </div>
         </div>
-        <!--
+
         <p>Or send me a message using the form below:</p>
-        <form>
+        <form action="https://formspree.io/f/xpznzrpp" method="POST">
             <div class="row">
                 <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" id="name" aria-describedby="Bob" placeholder="Your name">
+                    <input type="text" class="form-control" id="name" aria-describedby="Bob" placeholder="Your name" name="name" required>
                 </div>
                 <div class="col-md-6 form-group">
-                    <input type="email" class="form-control" id="email" aria-describedby="example@domain.com" placeholder="Your email">
+                    <input type="email" class="form-control" id="email" aria-describedby="example@domain.com" placeholder="Your email" name="email" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
-                    <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your message" name="message" required></textarea>
                 </div>
             </div>
             <div class="row d-flex justify-content-end">
-                <button class="btn btn-primary">
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">
                     Send
                 </button>
+              </div>
             </div>
-        </form> -->
+        </form>
     </div>
 </section>

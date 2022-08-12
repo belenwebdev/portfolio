@@ -21,7 +21,7 @@
   <div class="spacer"></div>
   <!-- <div class="menu"> -->
     <a class="nav-link" *ngFor="let item of sections" (click)="navigateTo(item)" [ngClass]="{'active': currentSection === item}">
-      <span>{{ item | titlecase }}</span>
+      {{ item | titlecase }}
     </a>
   <!-- </div> -->
   <a class="icon" (click)="toggleMenu()">
