@@ -3,8 +3,8 @@
 section {
     margin:0;
 }
-html, body { 
-    height: 100%; 
+html, body {
+    height: 100%;
 }
 
 html {
@@ -12,11 +12,31 @@ html {
 }
 
 body {
-    margin: 0; 
-    font-family: 'Lato', Roboto, "Helvetica Neue", sans-serif; 
+    margin: 0;
+    font-family: 'Lato', Roboto, "Helvetica Neue", sans-serif;
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  body {
+      height: 1024px;
+  }
+}
+
+/* iPad with landscape orientation. */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  body {
+      height: 768px;
+  }
+}
+
+/* iPhone 5
+You can also target devices with aspect ratio. */                       @media screen and (device-aspect-ratio: 40/71) {
+  body {
+      height: 500px;
+  }
 }
 
 p{
@@ -36,7 +56,7 @@ h1{
     padding-bottom: 5px;
 }
 
-h1::after { 
+h1::after {
     content: "";
     display: block;
     background: none repeat scroll 0 0 transparent;
@@ -64,13 +84,13 @@ h1::after {
 //     transition: 0.2s;
 //     padding: 10px;
 // }
-  
+
 // .btn:hover {
 //     color: black;
 //     transform: translate(-0.25rem,-0.25rem);
 //     box-shadow: 0.25rem 0.25rem black;
 // }
-  
+
 // .btn:active {
 //     transform: translate(0);
 //     box-shadow: none;
