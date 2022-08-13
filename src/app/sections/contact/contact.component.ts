@@ -30,7 +30,8 @@ export class ContactComponent implements OnInit {
           icon: 'success',
           title: 'Message sent!',
           text: 'Thanks a lot! I will get back to you as soon as I can',
-        })
+        });
+        this.contactForm.reset();
       },
       (err) => {
         console.log('error sending form', err);
