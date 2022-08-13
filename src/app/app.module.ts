@@ -16,26 +16,30 @@ import { SkillPillComponent } from './sections/skills/skill-pill/skill-pill.comp
 import { WorkCardComponent } from './sections/work/work-card/work-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ComingSoonComponent } from './shared/coming-soon/coming-soon.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent, 
-    FooterComponent, 
-    AboutComponent, 
-    SkillsComponent, 
-    WorkComponent, 
-    ContactComponent, 
-    HomeComponent, 
-    SkillPillComponent, 
-    WorkCardComponent, 
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    SkillsComponent,
+    WorkComponent,
+    ContactComponent,
+    HomeComponent,
+    SkillPillComponent,
+    WorkCardComponent,
     ComingSoonComponent
   ],
   imports: [
-    BrowserModule, 
-    BrowserAnimationsModule, 
+    BrowserModule,
+    BrowserAnimationsModule,
     MatIconModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DecimalPipe],
   bootstrap: [AppComponent],

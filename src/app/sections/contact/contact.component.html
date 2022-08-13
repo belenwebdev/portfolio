@@ -24,23 +24,31 @@
         </div>
 
         <p>Or send me a message using the form below:</p>
-        <form action="https://formspree.io/f/xpznzrpp" method="POST">
+        <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
             <div class="row">
-                <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" id="name" aria-describedby="Bob" placeholder="Your name" name="name" required>
-                </div>
-                <div class="col-md-6 form-group">
-                    <input type="email" class="form-control" id="email" aria-describedby="example@domain.com" placeholder="Your email" name="email" required>
-                </div>
+              <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="Bob"
+                    placeholder="Your name"
+                    name="name"
+                    formControlName="name"
+                    required>
+              </div>
+              <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" id="email" aria-describedby="example@domain.com" placeholder="Your email" name="email" formControlName="email" required>
+              </div>
             </div>
             <div class="row">
-                <div class="form-group">
-                    <textarea class="form-control" id="message" rows="3" placeholder="Your message" name="message" required></textarea>
-                </div>
+              <div class="form-group">
+                  <textarea class="form-control" id="message" rows="3" placeholder="Your message" name="message" formControlName="message" required></textarea>
+              </div>
             </div>
             <div class="row d-flex justify-content-end">
               <div class="col-md-4">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">
                     Send
                 </button>
               </div>

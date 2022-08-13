@@ -61,6 +61,10 @@ section {
     border-radius: 0;
     padding:10px;
     font-family: 'Lato';
+
+    &.ng-invalid.ng-touched {
+      border:1px solid #d9534f;
+    }
   }
 
   input{
