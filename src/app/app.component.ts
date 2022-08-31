@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 const HOME = 'home';
 const ABOUT = 'about';
 const SKILLS = 'skills';
-const WORK = 'work';
+const PROJECTS = 'projects';
 const CONTACT = 'contact';
 
 @Component({
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChild(HOME, { static: true }) home: ElementRef;
   @ViewChild(ABOUT) about: ElementRef;
   @ViewChild(SKILLS) skills: ElementRef;
-  @ViewChild(WORK) work: ElementRef;
+  @ViewChild(PROJECTS) projects: ElementRef;
   @ViewChild(CONTACT) contact: ElementRef;
 
   constructor(
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
       this.home,
       this.about,
       this.skills,
-      this.work,
+      this.projects,
       this.contact
     ];
     const scrollY = window.pageYOffset;
@@ -57,11 +57,10 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
         const current = element.nativeElement;
         const sectionId = current.id;
         const sectionHeight = current.offsetHeight;
-        const offset = (sectionId === ABOUT || sectionId === WORK) ? 200 : 120;
+        const offset = (sectionId === ABOUT) ? 200 : 120;
         const sectionTop = current.offsetTop - offset;
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          console.log(`the section id is ${sectionId}`)
           this._navigationPages.selectItem(sectionId);
         }
       }
@@ -102,8 +101,8 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
           case SKILLS:
             this.scrollTo(this.skills);
             break;
-          case WORK:
-            this.scrollTo(this.work);
+          case PROJECTS:
+            this.scrollTo(this.projects);
             break;
           case CONTACT:
             this.scrollTo(this.contact);

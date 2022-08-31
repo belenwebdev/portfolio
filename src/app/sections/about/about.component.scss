@@ -9,16 +9,5 @@
       text-align: center;
     }
 
-    .highlight{
-      // background-color: var(--color-pink);
-      font-family: monospace;
-      padding: 0 10px;
-      font-weight: 300;
-      border-bottom:1px dotted var(--color-pink);
-      background-color: rgba(255, 111, 145, 0.2);
-      &:hover{
-        background-color: rgba(255, 111, 145, 0.3);
-      }
-    }
 }
 

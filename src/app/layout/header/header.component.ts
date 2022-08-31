@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   public currentSection: string = 'home';
   public isMenuOpen = false;
 
-  public sections = ['home', 'about','skills', 'work', 'contact'];
+  public sections = ['home', 'about','skills', 'projects', 'contact'];
 
   constructor(
     private readonly _navigationService: NavigationService
