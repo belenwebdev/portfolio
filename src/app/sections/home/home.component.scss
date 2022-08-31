@@ -19,7 +19,7 @@ section{
   text-shadow: 0 0 100px var(--color-purple);
   background: var(--color-purple);
 	background: linear-gradient(-45deg, var(--color-yellow2), var(--color-yellow), var(--color-orange), var(--color-pink), var(--color-purple2), var(--color-purple));
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png"), linear-gradient(-45deg, var(--color-yellow2), var(--color-pink),var(--color-purple-darker2));
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png),linear-gradient(-210deg,#38438b, #7d3fe2, #e1588b, #ff7e71, #ffeb68);
   // background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
 
   @media only screen and (min-width: 768px) {
