@@ -1,5 +1,10 @@
 .card {
     margin:10px;
+    max-width: 20rem;
+
+    @media (max-width:780px){
+      max-width: 90%;
+    }
 
     .btn-primary{
         background-color: var(--color-purple);

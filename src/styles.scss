@@ -16,6 +16,10 @@ body {
     font-family: 'Lato', Roboto, "Helvetica Neue", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
   .app {
       height: 1024px;
