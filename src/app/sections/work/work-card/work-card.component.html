@@ -6,14 +6,14 @@
         <p class="tags">
           <span *ngFor="let tag of project.tags" class="highlight">{{ tag }}</span>
         </p>
-        <div class="d-flex flex-row justify-content-space-between">
-            <a [href]="project.url" target="_blank" class="btn btn-primary half-width">
-                <i class="fa fa-solid fa-eye"></i>
-                View
-            </a>
-            <a [href]="project.github" target="_blank" class="btn btn-secondary btn-icon half-width">
-                <i class="fa fa-brands fa-github"></i>
-            </a>
-        </div>
+    </div>
+    <div class="card-footer d-flex flex-row justify-content-space-between">
+        <a [href]="project.url" target="_blank" class="btn btn-primary half-width">
+            <i class="fa fa-solid fa-eye"></i>
+            View
+        </a>
+        <a [href]="project.github" target="_blank" class="btn btn-secondary btn-icon half-width">
+            <i class="fa fa-brands fa-github"></i>
+        </a>
     </div>
 </div>

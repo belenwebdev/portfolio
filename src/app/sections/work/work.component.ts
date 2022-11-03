@@ -9,6 +9,14 @@ export class WorkComponent implements OnInit {
 
   projects = [
     {
+      name: 'Tip calculator',
+      description: 'This tip calculator is built on React and will let you split a bill and tip among a group of people. It is fully responsive and operational.',
+      image:'tip-calculator.png',
+      tags: ['html','css','react'],
+      url:'https://tip-calculator-9de5c7.netlify.app/',
+      github:'https://github.com/belenwebdev/tip-calculator'
+    },
+    {
       name: 'Quizzical',
       description: 'Quizzical is built on react and connects to an API to retrieve a series of trivial questions. Put your knowledge to a test and find out how many questions you can get right!',
       image:'quizzical.png',
