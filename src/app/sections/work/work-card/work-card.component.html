@@ -8,12 +8,15 @@
         </p>
     </div>
     <div class="card-footer d-flex flex-row justify-content-space-between">
-        <a [href]="project.url" target="_blank" class="btn btn-primary half-width">
-            <i class="fa fa-solid fa-eye"></i>
-            View
-        </a>
-        <a [href]="project.github" target="_blank" class="btn btn-secondary btn-icon half-width">
-            <i class="fa fa-brands fa-github"></i>
-        </a>
+        <ul class="wrapper">
+          <li class="icon facebook">
+              <span class="tooltip">View</span>
+              <a [href]="project.url" target="_blank"><i class="fa-solid fa-eye"></i></a>
+          </li>
+          <li class="icon twitter">
+            <span class="tooltip">View code</span>
+            <a [href]="project.github" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </li>
+      </ul>
     </div>
 </div>
