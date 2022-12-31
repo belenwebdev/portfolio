@@ -9,6 +9,14 @@ export class WorkComponent implements OnInit {
 
   projects = [
     {
+      name: 'Rock Paper Scissors',
+      description: 'Play Rock Paper Scissors against a computer. Win points every time you win, but... Be careful! You will lose points if the house wins.',
+      image:'rock-paper-scissors.png',
+      tags: ['html','css','react'],
+      url:'https://rock-paper-scissors-d6397b.netlify.app/',
+      github:'https://github.com/belenwebdev/rock-paper-scissors'
+    },
+    {
       name: 'Tip calculator',
       description: 'This tip calculator is built on React and will let you split a bill and tip among a group of people. It is fully responsive and operational.',
       image:'tip-calculator.png',
@@ -23,14 +31,6 @@ export class WorkComponent implements OnInit {
       tags: ['html','css','react'],
       url:'https://quizzical-69f50.web.app/',
       github:'https://github.com/belenwebdev/react-course/tree/main/quizzical'
-    },
-    {
-      name: 'Travel journal',
-      description: 'This sample travel journal is built on read. It reads data from a file and displays using re-usable components.',
-      image:'travel-journal.png',
-      tags: ['html','css','react'],
-      url:'https://travel-journal-8182e.web.app/',
-      github:'https://github.com/belenwebdev/react-course/tree/main/travel-journal'
     }
   ]
 
